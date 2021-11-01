@@ -1,0 +1,131 @@
+:root{
+    --primary-color: #rgb(128, 0, 49);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+}
+
+h1.navbar-brand{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+nav ul li{
+    padding: 5px 15px;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.carousel-image{
+    max-width: 100%;
+    height: auto;
+}
+
+.item{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-image{
+    width: 100%;;
+    height: 150px;
+}
+
+.card-image{
+    width: 90%;
+    margin: auto;
+    height: 200px;
+}
+
+hr.first{
+    overflow: visible;
+    padding: 0;
+    border-top: medium double #333;
+    border: none;
+    color: #333;
+    text-align: center;
+}
+hr.first::after{
+    content: "§";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
+hr.second{
+    overflow: visible;
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+hr.second:before {
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+.services, .card-title{
+    font-weight: 500;
+}
+
+.card-span{
+    padding: 0 0 10px;
+    font-weight: bold;
+}
+.row.text-center{
+    margin-right:20px;
+    margin-left:20px;
+    text-align:center;
+}
+footer{
+    background-color:#333;
+    padding-top: 10px;
+    padding-bottom:10px;
+}
+footer p, footer h5{
+    color: white;
+}
+footer div a{
+    font-style: italic;
+}
+footer div{
+    text-align:center;
+}
+.last{
+    text-align:center;
+    width: 50%;
+    margin: 0 auto;
+}
+        
+@media (min-width:991px) and (max-width: 1200px){
+    .col-md-7, .col-lg-7{
+        margin-right: 1px;
+    }
+}
+@media(min-width:431px) and (max-width:768px){
+    .col-xs-7, .col-sm-7 {
+        margin-right:1px;
+    }
+}
